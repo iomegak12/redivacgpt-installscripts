@@ -9,6 +9,10 @@ poetry --version
 
 curl -fsSL https://ollama.com/install.sh | sh
 
+echo "Checking Ollama Up and Running ..."
+
+sleep 5
+
 ollama pull mistral
 ollama pull nomic-embed-text
 poetry install --extras "ui llms-ollama embeddings-ollama vector-stores-qdrant"
